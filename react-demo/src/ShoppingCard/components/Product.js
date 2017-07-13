@@ -14,7 +14,7 @@ var Product = React.createClass({
 				<div className='flux-product-detail'>
 					<h1 className='name'>{this.props.product.name}</h1>
 					<p className='description'>{this.props.product.description}</p>
-					<p className="price">Price: {this.props.selected == undefined ? 0 : this.props.selected.price}$</p>
+					<p className="price">Price: {this.props.selected.price}$</p>
 					<select onChange={this.selectVariant}>
 						{this.props.product.variants.map(function (variant, index) {
 							return (

@@ -7,14 +7,15 @@ import registerServiceWorker from './registerServiceWorker';
 
 var ProductData = require('./ShoppingCard/ProductData');
 var CartAPI = require('./ShoppingCard/utils/CartAPI');
+var ToDoData = require('./ToDo/utils/ToDoData');
 
 
 // Load Mock Product Data into localStorage
-ProductData.init();
+// ProductData.init();
 
 // Load Mock API Call
-CartAPI.getProductData();
+// CartAPI.getProductData();
+ToDoData.initData();
 
-
-ReactDOM.render(<CartApp />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('app'));
 registerServiceWorker();

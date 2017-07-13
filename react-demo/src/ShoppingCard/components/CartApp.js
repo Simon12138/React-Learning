@@ -1,6 +1,6 @@
 var React = require('react');
 var Product = require('./Product.js');
-// var Cart = require('./Cart.js');
+var Cart = require('./Cart.js');
 var ProductStore = require('../stores/ProductStore');
 
 function getCartState() {
@@ -27,6 +27,7 @@ var CartApp = React.createClass({
 	render: function() {
 		return (
 			<div className='flux-cart-app'>
+				<Cart />
 				<Product product={this.state.product} selected={this.state.selectedProduct}/>
 			</div>
 		);

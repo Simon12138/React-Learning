@@ -13,6 +13,13 @@ var CartActions = {
 			actionType: CartConstants.SELECT_PRODUCT,
 			data: index
     	});
+	},
+	addToCart: function(sku, update) {
+		AppDispatcher.handleAction({
+			actionType: CartConstants.CART_ADD,
+			sku: sku,
+			update: update
+		})
 	}
 };
 
