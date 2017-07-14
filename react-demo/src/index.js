@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import CartApp from './ShoppingCard/components/CartApp';
+import WeatherApp from './Weather/components/WeatherApp';
 import registerServiceWorker from './registerServiceWorker';
 
 var ProductData = require('./ShoppingCard/ProductData');
@@ -17,5 +18,5 @@ var ToDoData = require('./ToDo/utils/ToDoData');
 // CartAPI.getProductData();
 ToDoData.initData();
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<WeatherApp />, document.getElementById('app'));
 registerServiceWorker();
